@@ -3,8 +3,10 @@
 
 ## Task
 
-Complete the source code and header files
-- Define the structure: Point(x,y), using typedef
+Complete the header and source-code files
+- Define the structure: Point(x,y)
+    - define float fields `x` and `y` for the structure
+    - typedef to name Point
 - Complete the distance function and print the results
 
 ## Other functions
