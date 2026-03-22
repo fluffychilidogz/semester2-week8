@@ -1,15 +1,17 @@
-
 #include <stdio.h>
-
+#include <string.h>
 #include "structure.h"
 #include "student.h"
 
-int main( void ) {
+#define NAME_LENGTH 50
+#define NUM_MODULES 3
+
+int main() {
     // Create and initialise a student variable
     Student student = {
         .name = "John Smith",
         .id = 12345,
-        .marks = {75.0, 38.5, 81.0}
+        .marks = {76.0, 68.5, 81.0}
     };
     
     // Display original student information
