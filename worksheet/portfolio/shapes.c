@@ -39,14 +39,14 @@ float lineLength( Line l )
 {
     // Calculates the length of a line
     // calculation -> square root((x2 - x1)^2 + (y2 - y1)^2)
-    return (sqrt(pow(l.p[1].x - l.p[0].x,2) + pow(l.p[1].y - l.p[0].y,2)));
+    return fabsf(sqrt(pow(l.p[1].x - l.p[0].x,2) + pow(l.p[1].y - l.p[0].y,2)));
 }
 
 float triangleArea( Triangle t )
 {
     // Calculates the area of a triangle
     // calculation -> 1/2 * (x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2)) || 1/2 * base * height
-    return ((t.p[0].x * (t.p[1].y - t.p[2].y) + t.p[1].x * (t.p[2].y - t.p[0].y)
+    return fabsf((t.p[0].x * (t.p[1].y - t.p[2].y) + t.p[1].x * (t.p[2].y - t.p[0].y)
              + t.p[2].x * (t.p[0].y - t.p[1].y)) / 2);
 }
 
